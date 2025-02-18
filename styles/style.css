@@ -38,7 +38,10 @@ body {
 .logo span {
   font-style: italic;
   font-size: 50px;
-  color: rgba(24, 184, 24, 0.822);
+  background-image: linear-gradient(#7edd12ea, #1b45cf);
+  background-clip: text;
+  color: transparent;
+  /* color: rgba(24, 184, 24, 0.822); */
 }
 
 .nav-btn button {
@@ -90,7 +93,7 @@ body {
 .banner-text h1 {
   font-size: 45px;
   font-weight: 700;
-  background-image: linear-gradient(#75be22ce, #1b45cf);
+  background-image: linear-gradient(#7edd12ea, #1b45cf);
   background-clip: text;
   color: transparent;
 }
@@ -127,4 +130,72 @@ body {
 .banner-image img {
   width: 100%;
   border-radius: 4px;
+}
+
+/* Game Section  */
+.game-title {
+  text-align: center;
+}
+.game-title span {
+  background-image: linear-gradient(#7edd12ea, #1b45cf);
+  background-clip: text;
+  color: transparent;
+}
+.game-title p {
+  width: 60%;
+  margin: 10px auto;
+  color: gray;
+}
+
+.game-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.game-card {
+  margin: 15px auto;
+  width: 270px;
+  height: 380px;
+  padding: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  background-color: rgba(229, 234, 238, 0.651);
+  border-radius: 2px;
+  position: relative;
+}
+.game-card img {
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.game-card p {
+  color: rgb(109, 104, 104);
+}
+
+.card-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  top: 40%;
+  left: 30%;
+  font-weight: bold;
+  position: absolute;
+  display: none;
+  color: white;
+}
+.card-icon p {
+  color: red;
+}
+.card-icon i {
+  margin-left: 45px;
+}
+
+.game-card img:hover + .card-icon {
+  display: block;
+}
+
+.game-card img:hover {
+  filter: brightness(50%);
 }
