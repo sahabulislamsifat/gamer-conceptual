@@ -33,4 +33,27 @@
   .game-card-container {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  /* Play Instant  */
+  .instant-container {
+    flex-direction: column-reverse;
+  }
+  .instant-text {
+    width: 90%;
+    margin: 50px auto;
+  }
+  .instant-img {
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+  }
+  .big-img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .small-img {
+    width: 40%;
+    position: absolute;
+  }
 }
