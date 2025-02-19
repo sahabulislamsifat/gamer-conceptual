@@ -245,3 +245,45 @@ body {
   top: 70%;
   border: 10px solid rgba(77, 127, 202, 0.589);
 }
+
+/* Category  */
+.category-container h1 {
+  text-align: center;
+  margin-top: 130px;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.category {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  margin-bottom: 50px;
+}
+
+.game {
+  display: flex;
+  width: 400px;
+  height: 90px;
+  gap: 5px;
+  transition: all 0.5s;
+}
+
+.game img {
+  width: 22%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.game p {
+  font-size: 20px;
+  font-weight: 500;
+  width: 70%;
+  align-items: center;
+  align-content: center;
+}
+.game:hover {
+  outline: 1px solid greenyellow;
+  padding: 5px;
+  border-radius: 2px;
+}

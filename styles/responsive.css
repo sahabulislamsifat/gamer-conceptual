@@ -50,10 +50,29 @@
   .big-img {
     width: 100%;
     margin: 0 auto;
+    object-fit: cover;
   }
 
   .small-img {
+    object-fit: cover;
     width: 40%;
     position: absolute;
+  }
+
+  /* Category  */
+  .category-container h1 {
+    font-size: 25px;
+    margin: 0 auto;
+  }
+  .category {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 35px;
+    margin-bottom: 50px;
+  }
+  .game {
+    width: 400px;
+    height: 90px;
+    margin: 0 auto;
   }
 }
